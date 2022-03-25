@@ -1,0 +1,31 @@
+class Calculator:
+    def Logics():
+        while True:
+            try:
+                first = int(input("Enter the first digit\t"))
+            except ValueError:
+                print("Enter a number")
+            try:
+                second = int(input("Enter second digit\t"))
+            except ValueError:
+                print("Enter a number")
+            sign = input("Choose sign: "  " + " " - " " / " " * " " ^ ")
+            if sign == "+":
+                sum = first + second
+                print(sum)
+            elif sign == "-":
+                raz = first - second
+                print(raz)
+            elif sign == "/":
+                dell = first / second
+                print(dell)
+            elif sign == "*":
+                ymn = first * second
+                print(ymn)
+            elif sign == "^":
+                step = first ** second
+                print(step)
+            else:
+                print("Enter a character from the proposed list\n")
+    Logics()
+Calculator()
